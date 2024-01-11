@@ -1,0 +1,339 @@
+baseURL = "http://192.168.0.212:1313/"
+languageCode = "en-us"
+title = "IITM-Department of Biotechnology"
+theme = "megamsolutions-bio"
+
+[outputs]
+home = ["HTML", "AMP", "RSS", "JSON"]
+
+
+########################### taxonomies #################################
+[taxonomies]
+  author = "authors"
+  tag = "tags"
+  category = "categories"
+  degree = "degrees"
+  blogs_tag = "blogs_tags"
+  blogs_category = "blogs_categories"
+  areaofresearch = "areaofresearchs"
+  equipment = "equipments"
+########################### Navigation ###################################
+
+[[menu.main]]
+URL = ""
+name = "Home"
+weight = 1
+
+[[menu.main]]
+URL = "people"
+name = "People"
+weight = 2
+
+    [[menu.main]]
+    URL = "faculty"
+    name = "Faculty"
+    parent = "People"
+    weight = 1
+
+    [[menu.main]]
+    URL = "department-staff"
+    name = "Department staff"
+    parent = "People"
+    weight = 2
+
+    [[menu.main]]
+    URL = "post-doctoralresearchers"
+    name = "Post-doctoral Researchers"
+    parent = "People"
+    weight = 3
+
+    [[menu.main]]
+    URL = "project-staff"
+    name = "Project Staff"
+    parent = "People"
+    weight = 4
+
+    [[menu.main]]
+    URL = "administration"
+    name = "Administration"
+    parent = "People"
+    weight = 5
+
+    [[menu.main]]
+    URL = "advisory-council"
+    name = "Advisory Council"
+    parent = "People"
+    weight = 6
+
+    [[menu.main]]
+    URL = "alumni"
+    name = "Alumni"
+    parent = "People"
+    weight = 7
+
+    [[menu.main]]
+    URL = "research-scholars"
+    name = "Research Scholars"
+    parent = "People"
+    weight = 8
+
+[[menu.main]]
+URL = "academics"
+name = "Academics"
+weight = 3
+    [[menu.main]]
+        URL = "admissions"
+        name = "Admissions"
+        parent = "Academics"
+        weight = 1
+
+    [[menu.main]]
+        URL = "curriculum"
+        name = "Curriculum"
+        parent = "Academics"
+        weight= 2
+
+            [[menu.main]]
+            URL = "mtech.be"
+            name = "MTech BiologicalEngineering"
+            parent = "Curriculum"
+            weight= 1
+
+            [[menu.main]]
+            URL = "mtech.bpe"
+            name = "MTech Bioprocess Engineering"
+            parent = "Curriculum"
+            weight= 2
+
+            [[menu.main]]
+            URL = "ms.bs"
+            name = "M.S. Biological Sciences"
+            parent = "Curriculum"
+            weight= 3
+
+            [[menu.main]]
+            URL = "mtech.ce"
+            name = "MTech Clinical Engineering"
+            parent = "Curriculum"
+            weight= 4
+
+            [[menu.main]]
+            URL = "phd-bdt"
+            name = "PhD Biomedical Devices and Technology"
+            parent = "Curriculum"
+            weight= 5
+
+    [[menu.main]]
+        URL = "courses"
+        name = "Courses"
+        parent = "Academics"
+        weight = 3
+
+    [[menu.main]]
+        URL = "dualdegreeprograms"
+        name = "Dual Degree Programs"
+        parent = "Academics"
+        weight = 4
+
+    [[menu.main]]
+        URL = "mtech"
+        name = "M.Tech"
+        parent = "Academics"
+        weight = 5
+
+    [[menu.main]]
+        URL = "msphd"
+        name = "M.S./Ph.D"
+        parent = "Academics"
+        weight = 6
+
+    [[menu.main]]
+        URL = "jointdegreeprograms"
+        name = "Joint Degree Programs "
+        parent = "Academics"
+        weight = 7
+
+    [[menu.main]]
+        URL = "internationalstudents"
+        name = "International Students"
+        parent = "Academics"
+        weight = 8
+
+    [[menu.main]]
+        URL = "academicresources"
+        name = "Academic Resources"
+        parent = "Academics"
+        weight = 9
+
+[[menu.main]]
+URL = "research"
+name = "Research"
+weight = 4
+
+    [[menu.main]]
+    URL = "researchareas"
+    name = "Research Areas"
+    parent = "Research"
+    weight = 1
+
+    [[menu.main]]
+    URL = "centresandfacilities"
+    name = "Centres and Facilities"
+    parent = "Research"
+    weight = 2
+
+    # [[menu.main]]
+    # URL = "majorequipment"
+    # name = "Major Equipment"
+    # parent = "Research"
+    # weight = 3
+
+    [[menu.main]]
+    URL = "publications"
+    name = "Publications"
+    parent = "Research"
+    weight = 4
+
+    [[menu.main]]
+    URL = "patents"
+    name = "Patents"
+    parent = "Research"
+    weight = 5
+
+    [[menu.main]]
+    URL = "equipmentreservation"
+    name = "Equipment reservation"
+    parent = "Research"
+    weight = 6
+
+
+[[menu.main]]
+URL = "#"
+name = "News & Events"
+weight = 5
+
+    [[menu.main]]
+    URL = "newsandevents"
+    name = "Timeline"
+    parent = "News & Events"
+    weight = 1
+
+    [[menu.main]]
+    URL = "d3p"
+    name = "D3P"
+    parent = "News & Events"
+    weight = 2
+
+    [[menu.main]]
+    URL = "gallery"
+    name = "Gallery"
+    parent = "News & Events"
+    weight = 3
+
+    [[menu.main]]
+    URL = "joseph_thomas_memorial"
+    name = "Joseph Thomas Memorial"
+    parent = "News & Events"
+    weight = 4
+
+[[menu.main]]
+URL = "bio-resources"
+name = "Resources"
+weight = 6
+
+[[menu.main]]
+URL = "contactus"
+name = "Contact Us"
+weight = 7
+
+
+
+
+
+######################### Default Parameters ###########################
+[params]
+# meta data
+author =  "Megamsolutions"
+description = "This is meta description"
+# google tag manager
+google_tag_manager = "" # your id
+# contact form action
+contact_form_action = "#" # contact form works with : https://formspree.io
+# copyright
+copyright = " Department of Biotechnology | IIT Madras &copy; {year}"
+
+# preloader
+[params.preloader]
+enable = true
+preloader = "images/dna1.gif" # use png, jpg, svg or gif format
+
+# search
+[params.search]
+enable = true
+
+# cookies
+[params.cookies]
+enable = true
+expire_days = 2
+
+####################### banner #######################################
+[params.banner]
+bgImage = "images/banner/banner.jpg"
+title1 = "Department of"
+title2 = "Biotechnology"
+title3 = "Bhupat and Jyoti Mehta School of Biosciences"
+logo2="images/logo2.png"
+
+# logo
+logo2="images/logo2.png"
+logo = "images/logo2.png"
+
+#department-image
+biologicalscience="images/biological.jpg"
+biologicalengineering="images/biologicalengg.jpg"
+computationalbiology="images/computational.jpg"
+chemicalbiology="images/chemical.jpg"
+homeimage="images/home-image.png"
+hodimage="images/hod-image.png"
+footerlogo="images/footer-logo2.png"
+footerwords="images/footer-words.png"
+
+#people-image
+peoplehome="/images/peoplehome.jpg"
+academicshome="/images/academics.jpg"
+
+############################## Social Site ##########################
+[[params.social]]
+icon = "ti-facebook" # themify icon pack https://themify.me/themify-icons
+link = "#"
+[[params.social]]
+icon = "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
+link = "#"
+[[params.social]]
+icon = "ti-github" # themify icon pack https://themify.me/themify-icons
+link = "#"
+[[params.social]]
+icon = "ti-linkedin" # themify icon pack https://themify.me/themify-icons
+link = "#"
+
+
+
+  ########################## Plugings ######################################
+
+# css plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+# [[params.plugins.css]]
+# link = "plugins/themify-icons/themify-icons.css"
+
+# js plugins
+# [[params.plugins.js]]
+# link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+# [[params.plugins.js]]
+# link = "plugins/search/fuse.min.js"
+# [[params.plugins.js]]
+# link = "plugins/search/mark.js"
+# [[params.plugins.js]]
+# link = "plugins/search/search.js"
